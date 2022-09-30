@@ -12,10 +12,12 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: #000000;
+    z-index: 1;
 }
 
 .navbar img {
-    height: 40px;
+    height: 50px;
     width: 270px;
     justify-self: flex-start;
     box-sizing: content-box;
@@ -42,7 +44,7 @@
     font-family: 'Roboto Mono', monospace;
     text-decoration: none;
     font-size: 20px;
-    color: #00000077;
+    color: #ffffff;
     transition: .5s;
 }
 
@@ -52,11 +54,35 @@
 }
 
 .fafa {
-    color: #00000077;
-    font-size: larger;
-    margin-right: 5%;
-    border: 0px;
-    background-color: #ffffff;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#home {
+    background-image: url("https://images.wallpaperscraft.com/image/single/keyboard_laptop_gradient_203739_3840x2160.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+}
+
+#home div:nth-of-type(1) {
+    font-size: 250%;
+}
+
+#home div:nth-of-type(2) {
+    font-size: 200%;
+}
+
+#home div:nth-of-type(3) {
+    font-size: 350%;
+
 }
 
 @media screen and (max-width: 950px) {
@@ -65,41 +91,49 @@
     }
 
     .fafa {
-        background-color: #ffffff;
         padding: 16px;
         font-size: 25px;
         border: none;
     }
 
+    .fafa:hover {
+        color: #FF4100;
+    }
+
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #ffffff;
+        background-color: #000000;
         min-width: 160px;
         z-index: 1;
         right: 0;
     }
 
     .dropdown-content a {
-        color: #00000077;
+        color: #ffffff;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-    }
-
-    .dropdown-content a:hover {
-        background-color: #ddd;
     }
 
     .dropdown:hover .dropdown-content {
         display: block;
     }
 
-    .dropdown:hover .dropbtn {
-        background-color: #3e8e41;
+    #home div:nth-of-type(1) {
+        font-size: 200%;
     }
-}
 
+    #home div:nth-of-type(2) {
+        font-size: 150%;
+    }
+
+    #home div:nth-of-type(3) {
+        font-size: 300%;
+
+    }
+
+}
 
 @media screen and (min-width: 951px) {
 
@@ -109,9 +143,25 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .navbar img {
-        height: 30px;
+        height: 40px;
         width: 200px;
     }
+
+    #home div:nth-of-type(1) {
+        font-size: 200%;
+    }
+
+    #home div:nth-of-type(2) {
+        font-size: 150%;
+    }
+
+    #home div:nth-of-type(3) span {
+        font-size: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
